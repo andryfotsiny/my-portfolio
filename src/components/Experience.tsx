@@ -1,6 +1,6 @@
 'use client';
 import { motion } from 'framer-motion';
-import { Briefcase, Calendar, MapPin, TerminalSquare } from 'lucide-react';
+import { Briefcase, Calendar, TerminalSquare } from 'lucide-react';
 
 export const Experience = () => {
     const experiences = [

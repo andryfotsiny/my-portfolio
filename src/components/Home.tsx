@@ -56,8 +56,8 @@ export const Home = () => {
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.6 }}
             >
-              Je suis un passionné des technologies de l'information et de la transformation numérique. 
-              Actuellement en deuxième année de Master en Ingénierie Informatique, j'ai enrichi mon 
+              Je suis un passionné des technologies de l&#39;information et de la transformation numérique.
+              Actuellement en deuxième année de Master en Ingénierie Informatique, j&#39;ai enrichi mon
               parcours académique par la réalisation de plus de 30 projets.
             </motion.p>
 

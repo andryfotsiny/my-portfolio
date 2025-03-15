@@ -174,7 +174,7 @@ export const Contact = () => {
                                     transition={{ duration: 0.5 }}
                                 >
                                     <p className="text-lg font-military">Message envoyé avec succès!</p>
-                                    <p>Merci de m'avoir contacté. Je vous répondrai dans les plus brefs délais.</p>
+                                    <p>Merci de m&#39;avoir contacté. Je vous répondrai dans les plus brefs délais.</p>
                                 </motion.div>
                             ) : (
                                 <form onSubmit={handleSubmit} className="flex flex-col gap-4">

@@ -1,7 +1,7 @@
 'use client';
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Shield, Target, ChevronUp } from 'lucide-react';
+import { Shield,ChevronUp } from 'lucide-react';
 
 const menuItems = [
     { id: 'home', label: 'Home' },
