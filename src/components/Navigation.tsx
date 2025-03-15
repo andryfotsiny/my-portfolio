@@ -1,7 +1,7 @@
 'use client';
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Shield,ChevronUp } from 'lucide-react';
+import { Shield, ChevronUp } from 'lucide-react';
 
 const menuItems = [
     { id: 'home', label: 'Home' },
@@ -30,8 +30,10 @@ export const Navigation = () => {
             const sections = document.querySelectorAll('section[id]');
 
             sections.forEach(section => {
-                const sectionTop = section.offsetTop - 100;
-                const sectionHeight = section.offsetHeight;
+                // Use type assertion to tell TypeScript that these properties exist
+                const sectionElement = section as HTMLElement;
+                const sectionTop = sectionElement.offsetTop - 100;
+                const sectionHeight = sectionElement.offsetHeight;
 
                 if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
                     setActiveItem(section.getAttribute('id') || 'home');
@@ -54,8 +56,10 @@ export const Navigation = () => {
         setActiveItem(id);
         const element = document.getElementById(id);
         if (element) {
+            // Use type assertion here as well
+            const htmlElement = element as HTMLElement;
             window.scrollTo({
-                top: element.offsetTop - 80,
+                top: htmlElement.offsetTop - 80,
                 behavior: 'smooth'
             });
         }
