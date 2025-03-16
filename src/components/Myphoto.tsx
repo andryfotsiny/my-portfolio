@@ -2,7 +2,7 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
-import photo from './photo.png';
+import photo from '../../public/photo.png';
 
 export const MyPhoto = () => {
   const [scanning, setScanning] = useState(true);
@@ -28,11 +28,12 @@ export const MyPhoto = () => {
         {/* Conteneur de la photo avec masque */}
         <div className="relative w-full h-full p-3">
           <Image
-            src={photo}
-            alt="Profile Photo"
-            layout="fill"
-            objectFit="cover"
-            className="rounded-lg"
+              src={photo}
+              alt="Profile Photo"
+              fill
+              className="rounded-lg object-cover"
+              sizes="(max-width: 768px) 100vw, 50vw"
+              priority
           />
           
           {/* Overlay avec effet holographique */}

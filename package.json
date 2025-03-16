@@ -2,7 +2,7 @@
   "name": "my-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://andrymichel.github.io/my-portfolio",
+  "homepage": "C",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
